@@ -1,0 +1,37 @@
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type.descriptor.sql.BasicBinder: TRACE
+
+spring:
+  datasource:
+    url:  jdbc:h2:mem:boaglioMovies
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  jpa:
+   show-sql: true
+   hibernate:
+        ddl-auto: none
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false
+
+springdoc:
+  cache:
+    disabled: true
+  show-actuator: false
+  swagger-ui:
+    display-request-duration: true
+    use-root-path: true
+    groups-order: DESC
+    operationsSorter: method
+  version: 1.0

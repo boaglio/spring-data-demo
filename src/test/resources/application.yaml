@@ -1,0 +1,25 @@
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+spring:
+  datasource:
+    url:  jdbc:h2:mem:boaglioMovies-test
+  jpa:
+   show-sql: true
+   hibernate:
+        ddl-auto: none
+
+management:
+  security:
+    enabled: false
+
+springdoc:
+  version: 1.0
+  swagger-ui:
+    display-request-duration: true
+    groups-order: DESC
+    operationsSorter: method
+    disable-swagger-default-url: true
+  show-actuator: true
