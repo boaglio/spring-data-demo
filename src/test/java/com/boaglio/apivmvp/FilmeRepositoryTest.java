@@ -1,5 +1,7 @@
 package com.boaglio.apivmvp;
 
+import com.boaglio.apivmvp.domain.Filme;
+import com.boaglio.apivmvp.repo.FilmeRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class FilmeRepositoryTest {
 
 	@Autowired
-	FilmeRepository repository;
+    FilmeRepository repository;
 
 	@Test
 	@DisplayName("Busca filmes cadastrados")

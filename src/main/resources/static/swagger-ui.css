@@ -1,0 +1,190 @@
+body, .swagger-ui {
+     background-color: #1E1E1E;
+     color: #FFF;
+     color-scheme: dark;
+}
+ * {
+     color: #FFF;
+}
+ .swagger-ui.topbar {
+     background-color: #252525;
+     border-bottom: 1px solid #424242;
+}
+ .swagger-ui.opblock {
+     background-color: #252525;
+     border: 1px solid #424242;
+}
+ .swagger-ui.opblock.opblock-summary {
+     background-color: #333333;
+}
+ .swagger-ui.parameter__name {
+     color: #90CAF9;
+}
+ .swagger-ui pre code {
+     background-color: #333333;
+     color: #EEEEEE;
+}
+ .swagger-ui.btn {
+     background-color: #64B5F6;
+     color: #212121;
+     border: 1px solid #64B5F6;
+}
+ .swagger-ui.btn:hover {
+     background-color: #42A5F5;
+     border-color: #42A5F5;
+}
+ .swagger-ui input[type="text"], .swagger-ui textarea, .swagger-ui select {
+     background-color: #333333;
+     color: #DCDCDC;
+     border: 1px solid #424242;
+}
+ .swagger-ui .scheme-container {
+     background: #333333;
+     box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+     margin: 0 0 20px;
+     padding: 30px 0;
+}
+ .swagger-ui .info .title {
+     color: #FFF;
+     font-family: sans-serif;
+     font-size: 36px;
+     margin: 0;
+}
+ element {
+}
+ .swagger-ui a.nostyle {
+     color: #FFF;
+}
+ .swagger-ui a.nostyle:visited {
+     color: #FFF;
+}
+ .swagger-ui .renderedMarkdown {
+     color: #FFF;
+}
+ swagger-ui .opblock-title_normal p {
+     color: #FFF;
+}
+ .swagger-ui .responses-inner h4, .swagger-ui .responses-inner h5 {
+     color: #FFF;
+     font-family: sans-serif;
+     font-size: 12px;
+     margin: 10px 0 5px;
+}
+ .swagger-ui .opblock .tab-header .tab-item.active h4 span {
+     color: #3b4151;
+}
+ .swagger-ui .response-col_description {
+     width: 99%;
+     color: #FFF;
+}
+ .swagger-ui .response-col_status {
+     color: #FFF;
+     font-family: sans-serif;
+     font-size: 14px;
+}
+ .swagger-ui .opblock-description-wrapper p, .swagger-ui .opblock-external-docs-wrapper p, .swagger-ui .opblock-title_normal p {
+     color: #FFF;
+     font-family: sans-serif;
+     font-size: 14px;
+     margin: 0;
+}
+ .swagger-ui .response-col_links {
+     color: #FFF;
+     font-family: sans-serif;
+     font-size: 14px;
+     max-width: 40em;
+     padding-left: 2em;
+}
+/* zzz */
+ .swagger-ui .tab li button.tablinks {
+     background: none;
+     border: 0;
+     color: #FFF;
+     font-family: inherit;
+     font-weight: inherit;
+     padding: 0;
+}
+ .swagger-ui .tab li button.tablinks {
+     background: none;
+     border: 0;
+     color: #FFF;
+     font-family: inherit;
+     font-weight: inherit;
+     padding: 0;
+}
+ .swagger-ui .models .json-schema-2020-12:not(.json-schema-2020-12--embedded) > .json-schema-2020-12-head .json-schema-2020-12__title:first-of-type {
+     font-size: 16px;
+     color: #FFF;
+}
+ , .swagger-ui table thead tr th {
+     border-bottom: 1px solid rgba(59,65,81,.2);
+     color: #FFF;
+     font-family: sans-serif;
+     font-size: 12px;
+     font-weight: 700;
+     padding: 12px 0;
+     text-align: left;
+}
+ .swagger-ui table thead tr th {
+     border-bottom: 1px solid rgba(59,65,81,.2);
+     color: #FFF;
+     font-family: sans-serif;
+     font-size: 12px;
+     font-weight: 700;
+     padding: 12px 0;
+     text-align: left;
+}
+ .swagger-ui .opblock .opblock-summary-description {
+     color: #FFF;
+     font-family: sans-serif;
+     font-size: 13px;
+     word-break: break-word;
+}
+ .swagger-ui .parameter__name {
+     color: #FFF;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     margin-right: .75em;
+}
+ .swagger-ui .parameter__type {
+     color: #FFF;
+     font-family: monospace;
+     font-size: 12px;
+     font-weight: 600;
+     padding: 5px 0;
+}
+ .swagger-ui .renderedMarkdown p, .swagger-ui .renderedMarkdown pre {
+     margin: 1em auto;
+     color: #FFF;
+     word-break: break-all;
+     word-break: break-word;
+}
+ schema-2020-12__title {
+     color: #FFF;
+     font-family: monospace;
+     font-size: 12px;
+     font-weight: 600;
+     vertical-align: middle;
+}
+ .swagger-ui .json-schema-2020-12-property .json-schema-2020-12__title {
+     color: #FFF;
+     font-family: monospace;
+     font-size: 12px;
+     font-weight: 600;
+     vertical-align: middle;
+}
+ .swagger-ui .json-schema-2020-12-json-viewer__name--secondary {
+     color: #FFF;
+     font-style: italic;
+}
+ .swagger-ui .json-schema-2020-12-json-viewer__value--secondary {
+     color: #FFF;
+     font-style: italic;
+}
+
+.swagger-ui input[type="text"], .swagger-ui textarea, .swagger-ui select {
+    background-color: #333333;
+    color: #FFF;
+    border: 1px solid #424242;
+}

@@ -1,4 +1,4 @@
-package com.boaglio.apivmvp;
+package com.boaglio.apivmvp.domain;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
@@ -13,7 +13,7 @@ public class Filme {
     @Schema(example = "Ainda Estou Aqui")
     private String titulo;
 
-    @Schema(example = "drama")
+    @Schema(example = "Drama")
     private String genero;
 
     @Schema(example = "2024")

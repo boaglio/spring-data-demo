@@ -2,8 +2,10 @@ logging:
   level:
     org:
       hibernate:
-        SQL: DEBUG
-        type.descriptor.sql.BasicBinder: TRACE
+        SQL: DEBUG  # mostra o SQL
+        orm:
+          jdbc:
+            bind: TRACE # mostra os parametros
 
 spring:
   datasource:
@@ -16,6 +18,11 @@ spring:
    show-sql: true
    hibernate:
         ddl-auto: none
+  mvc:
+    static-path-pattern: /static/**
+  web:
+    resources:
+      static-locations: classpath:/static/
 
 management:
   endpoints:

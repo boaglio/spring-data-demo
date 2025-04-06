@@ -1,5 +1,8 @@
-package com.boaglio.apivmvp;
+package com.boaglio.apivmvp.api;
 
+import com.boaglio.apivmvp.domain.Filme;
+import com.boaglio.apivmvp.exception.FilmeNotFoundException;
+import com.boaglio.apivmvp.repo.FilmeRepository;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -7,14 +10,11 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/filmes")
-@Tag( name="Filme Controller", description = "Operações relacionadas a filmes")
+@Tag( name="Filme DML", description = "Operações relacionadas a filmes")
 public class FilmeAPI {
 
     private final FilmeRepository filmeRepository;
@@ -23,29 +23,10 @@ public class FilmeAPI {
         this.filmeRepository = filmeRepository;
     }
 
-    @Operation(summary = "Lista todos os filmes")
-    @GetMapping
-    public ResponseEntity<List> getAllFilmes() {
-        var Filmes = filmeRepository.findAll();
-        return ResponseEntity.ok(Filmes);
-    }
-
-    @Operation( summary = "Obtém um filme pelo ID")
-    @GetMapping("/{id}")
-    public ResponseEntity<Filme> getFilmeById(@PathVariable("id") @Parameter(example = "2") Long id) {
-        return filmeRepository.findById(id)
-                .map(ResponseEntity::ok)
-                .orElseThrow(() -> new FilmeNotFoundException(id));
-    }
     @Operation(summary = "Cria um novo filme")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Found the filme",
-                    content = { @Content(mediaType = "application/json",
-                            schema = @Schema(implementation = Filme.class)) }),
-            @ApiResponse(responseCode = "400", description = "Invalid id",
-                    content = @Content),
-            @ApiResponse(responseCode = "404", description = "Filme not found",
-                    content = @Content) })
+            @ApiResponse(responseCode = "200", description = "Found the filme",content = { @Content(mediaType = "application/json",schema = @Schema(implementation = Filme.class)) }),
+            @ApiResponse(responseCode = "400", description = "Invalid id",content = @Content),@ApiResponse(responseCode = "404", description = "Filme not found",content = @Content) })
     @PostMapping
     public Filme criarFilme(@RequestBody Filme Filme) {
         return filmeRepository.save(Filme);
